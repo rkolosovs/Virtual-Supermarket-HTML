@@ -19,11 +19,21 @@
 		<img class="product" src="biezp5_still00.png" onclick="openDisplay('bp5')">
 		<img class="product" src="biezp9_still00.png" onclick="openDisplay('bp9')">
 		<img id="sviests-img" class="product" src="sviests_still00.png" onclick="openDisplay('sviests')">
+		<div class="shelf-border">
+			<div class="pricetag">Biezpiens Valmiera <br>1.45&#8364; <br>180g <br>8.06&#8364;/kg</div>
+			<div class="pricetag">Biezpiens Valmiera Pilnpiena <br>1.55&#8364; <br>180g <br>8.60&#8364;/kg</div>
+			<div class="pricetag">Sviests RASA Saldkr&#275;juma <br>2.15&#8364; <br>180g <br>11.95&#8364;/kg</div>
+		</div>
 	</div>
 	<div id="s2" class="shelf">
 		<img id="piens-img" class="product" src="piens_still00.png" onclick="openDisplay('piens')">
+		<div class="shelf-border">
+			<div class="pricetag">Piens Limba&#382;u 3,5% <br>1.79&#8364; <br>1L <br>1.79&#8364;/L</div></div>
+		</div>
 	</div>
-	<div id="s3" class="shelf"></div>
+<!-- 	<div id="s3" class="shelf">
+		<div class="shelf-border"></div>
+	</div> -->
 
 	<div id="div-display" class="hidden">
 		<div>
@@ -68,12 +78,12 @@
 
 					document.getElementById('s1').classList.remove("hidden");
 					document.getElementById('s2').classList.remove("hidden");
-					document.getElementById('s3').classList.remove("hidden");
+					// document.getElementById('s3').classList.remove("hidden");
 					cartVisible = false;
 				} else {
 					document.getElementById('s1').classList.add("hidden");
 					document.getElementById('s2').classList.add("hidden");
-					document.getElementById('s3').classList.add("hidden");
+					// document.getElementById('s3').classList.add("hidden");
 					if (!document.getElementById("div-display").classList.contains("hidden")) {
 						document.getElementById("div-display").classList.add("hidden");
 					}
@@ -309,13 +319,13 @@
 
 				document.getElementById('s1').classList.remove("hidden");
 				document.getElementById('s2').classList.remove("hidden");
-				document.getElementById('s3').classList.remove("hidden");
+				// document.getElementById('s3').classList.remove("hidden");
 			}
 
 			function openDisplay(item) {
 				document.getElementById('s1').classList.add("hidden");
 				document.getElementById('s2').classList.add("hidden");
-				document.getElementById('s3').classList.add("hidden");
+				// document.getElementById('s3').classList.add("hidden");
 
 				document.getElementById("div-display").classList.remove("hidden");
 
