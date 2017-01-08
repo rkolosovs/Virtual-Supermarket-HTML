@@ -35,6 +35,8 @@ object {
 
 body {
    background-image: url("background.png");
+   color:#303030;
+   font-family: Tahoma, Geneva, sans-serif;
 }
 
 .hidden {
@@ -109,14 +111,14 @@ button {
   background-repeat: no-repeat;
   background-size: 40px 40px;
   border-radius: 25%;
-  background-color: rgba(101, 101, 101, 0.5);
+  background-color: rgba(230, 230, 230, 0.5);
 }
 
 #topBar {
   position:relative;
   width: 100%; 
   height: 8%;
-  background: rgba(101, 101, 101, 0.9);
+  background: rgba(230, 230, 230, 0.9);
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
@@ -129,7 +131,7 @@ button {
   top: 2%;
   width: 90%; 
   height: 85%;
-  background: rgba(101, 101, 101, 0.5);
+  background: rgba(230, 230, 230, 0.5);
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
@@ -142,7 +144,8 @@ button {
   top: 2%;
   width: 90%; 
   height: 85%;
-  background: rgba(101, 101, 101, 0.5);
+  text-align: right;
+  background: rgba(230, 230, 230, 0.5);
   border-top-left-radius: 2em;
   border-top-right-radius: 2em;
   border-bottom-left-radius: 2em;
@@ -158,6 +161,14 @@ button {
   width: 40%; 
   height: 90%;
   float:right;  
+}
+
+#content {
+  position: relative;
+  height: 95%
+  width:95%;
+  padding-right: 5%;
+  padding-top: 5%;
 }
 
 X3D:hover, 
