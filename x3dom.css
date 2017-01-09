@@ -34,7 +34,7 @@ object {
 }
 
 body {
-   background-image: url("background.png");
+   background-color: #d3d3d3;
    color:#303030;
    font-family: Tahoma, Geneva, sans-serif;
 }
@@ -59,13 +59,17 @@ body {
   background-image: url("search.svg");
 }
 
+.shelf {
+  width:100%;
+}
+
 .shelf-border {
   position: relative;
-  background-image: url("shelfborder.png");
+  background-color: #ffffff;
   margin-top: -115px;
-  margin-left: -5%;
-  width: 110%;
-  height: 150px;
+  margin-left: 0%;
+  width: 100%;
+  height: 87px;
 }
 
 .product {
@@ -88,7 +92,7 @@ body {
   padding-bottom: 2px;
   margin-right: 4.45%;
   border-radius: 5%;
-  border: 3px solid chocolate;
+  border: 3px solid #024265;
   background-color: rgba(230, 230, 230, 1);
 }
 
@@ -118,11 +122,11 @@ button {
   position:relative;
   width: 100%; 
   height: 8%;
-  background: rgba(230, 230, 230, 0.9);
-  border-top-left-radius: 2em;
-  border-top-right-radius: 2em;
-  border-bottom-left-radius: 2em;
-  border-bottom-right-radius: 2em;
+  background-color: #024265;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 #div-display {
@@ -179,7 +183,12 @@ x3d:hover,
 }
 
 .x3dom-canvas {
-  border:none;
+  border:solid;
+  border-color: #024265; 
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
   cursor:pointer;
   cursor:-webkit-grab;
   cursor:grab;
